@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single"
+        >
+        <item android:title="Main Menu">
+            <menu>
+
+                <item
+                    android:id="@+id/category"
+                    android:icon="@drawable/category"
+                    android:title="Project Category"
+                    />
+
+                <item
+                    android:id="@+id/list"
+                    android:icon="@drawable/list"
+                    android:title="Project List" />
+
+
+
+                <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/about"
+                    android:title="About Upazila" />
+
+                <item
+                    android:id="@+id/exit"
+                    android:icon="@drawable/exit"
+                    android:title="Exit" />
+
+            </menu>
+
+
+        </item>
+
+
+    </group>
+
+
+</menu>

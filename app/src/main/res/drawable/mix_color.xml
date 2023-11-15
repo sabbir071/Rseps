@@ -1,0 +1,24 @@
+<!-- res/drawable/background_two_colors.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bottom color -->
+    <item android:drawable="@color/freelancerColor" />
+    <!-- Top color with a gradient to make it transition smoothly -->
+    <item
+        android:bottom="-100dp"
+        android:left="-100dp"
+        android:right="-100dp"
+        android:top="0dp"
+        >
+        <rotate>
+            <shape android:shape="rectangle">
+                <gradient
+                    android:endColor="@color/freelancerColor"
+                    android:startColor="@color/neon"
+                    android:centerColor="@color/neon2"
+                    android:type="linear"
+                    android:angle="90"
+                    />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/drawerLayout"
+    android:background="@color/white"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@color/white"
+       >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:orientation="horizontal"
+          android:background="#29B2FE"
+          android:layout_gravity="center_horizontal"
+          >
+
+          <androidx.appcompat.widget.Toolbar
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              >
+
+              <com.airbnb.lottie.LottieAnimationView
+                  android:id="@+id/lottie_menu"
+                  android:layout_width="30dp"
+                  android:layout_height="25dp"
+                  app:lottie_rawRes="@raw/menu"
+                  app:lottie_autoPlay="true"
+                  app:lottie_loop="true"
+                  android:layout_alignParentStart="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginStart="10dp"
+                  />
+
+              <!--<ImageView
+                  android:id="@+id/imageMenu"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:src="@drawable/menu"
+                  android:layout_centerVertical="true"
+                  android:layout_marginStart="10dp"
+                  />-->
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:layout_gravity="center"
+                  android:fontFamily="@font/kalpurush"
+                  android:gravity="center"
+                  android:text="Home"
+                  android:textColor="@color/white"
+                  android:textSize="21sp" />
+
+              <!-- <com.airbnb.lottie.LottieAnimationView
+                   android:id="@+id/animationView"
+                   android:layout_width="50dp"
+                   android:layout_height="wrap_content"
+                   app:lottie_rawRes="@raw/search2"
+                   app:lottie_autoPlay="true"
+                   app:lottie_loop="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_centerVertical="true"
+                   android:scaleType="centerCrop"
+                   />-->
+
+             <!-- <ImageView
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:src="@drawable/search1"
+                  android:layout_alignParentEnd="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginEnd="10dp"
+                  android:layout_gravity="end"
+                  />-->
+          </androidx.appcompat.widget.Toolbar>
+
+
+      </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:background="@color/white"
+           >
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:background="@color/white"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="শাজাহানপুর উপজেলা প্রকল্প সমূহ"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:textSize="20sp"
+               android:fontFamily="@font/nikosh"
+               android:textColor="@color/green"
+               android:layout_margin="10dp"
+               />
+
+
+       </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Division"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:fontFamily="@font/nikosh"
+            android:textColor="#75000000"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select District"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textSize="14sp"
+            android:fontFamily="@font/nikosh"
+            android:textColor="#75000000"
+            android:layout_marginEnd="10dp"
+            />
+
+
+    </LinearLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           >
+
+           <Spinner
+               android:id="@+id/select_division"
+               android:layout_width="120dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/border"
+               android:padding="5dp"
+               android:textAlignment="center"
+               />
+
+           <Spinner
+               android:id="@+id/select_district"
+               style="@style/Widget.AppCompat.Spinner.Underlined"
+               android:layout_width="120dp"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:padding="5dp"
+               android:textAlignment="center"
+               android:background="@drawable/border" />
+
+
+       </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Upazila"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:fontFamily="@font/nikosh"
+            android:textColor="#75000000"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Union"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textSize="14sp"
+            android:fontFamily="@font/nikosh"
+            android:textColor="#75000000"
+            android:layout_marginEnd="10dp"
+            />
+
+    </LinearLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_margin="10dp"
+           >
+
+           <Spinner
+               android:id="@+id/upazila"
+               style="@style/Widget.AppCompat.Spinner.Underlined"
+               android:layout_width="120dp"
+               android:layout_height="wrap_content"
+               android:padding="5dp"
+               android:textAlignment="center"
+               android:background="@drawable/border" />
+
+           <Spinner
+               android:id="@+id/union"
+               style="@style/Widget.AppCompat.Spinner.Underlined"
+               android:layout_width="120dp"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:padding="5dp"
+               android:textAlignment="center"
+               android:background="@drawable/border" />
+
+
+       </RelativeLayout>
+
+       </LinearLayout>
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/Button1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_columnWeight="1"
+           android:layout_rowWeight="1"
+           app:cardElevation="5dp"
+           app:cardCornerRadius="10dp"
+           android:backgroundTint="@color/white"
+           android:layout_gravity="center_horizontal"
+           android:layout_margin="10dp"
+           >
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               >
+
+               <com.airbnb.lottie.LottieAnimationView
+                   android:id="@+id/map"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   app:lottie_rawRes="@raw/map"
+                   app:lottie_autoPlay="true"
+                   app:lottie_loop="true"
+                   android:layout_alignParentStart="true"
+                   android:scaleType="centerCrop"
+                   android:layout_marginStart="10dp"
+                   />
+
+               <TextView
+                   android:id="@+id/tvname"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   android:layout_toEndOf="@id/map"
+                   android:fontFamily="@font/nikosh"
+                   android:gravity="center"
+                   android:text="উপজেলার সংশ্লিষ্ট প্রকল্পের ম্যাপ"
+                   android:textColor="@color/black"
+                   android:textSize="21sp"
+                   />
+
+               <TextView
+                   android:id="@+id/tvdes"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/tvname"
+                   android:layout_toEndOf="@id/map"
+                   android:layout_marginStart="55dp"
+                   android:layout_centerInParent="true"
+                   android:fontFamily="@font/nikosh"
+                   android:gravity="center"
+                   android:text="ম্যাপ দেখতে কার্ডটিতে ক্লিক করুন"
+                   android:textColor="@color/black"
+                   android:textSize="15sp"
+                   />
+
+           </RelativeLayout>
+
+
+       </androidx.cardview.widget.CardView>
+
+
+       <ProgressBar
+           android:id="@+id/progressBar"
+           style="?android:attr/progressBarStyle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+          android:visibility="visible"
+           />
+
+       <ListView
+           android:id="@+id/listView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_margin="10dp"
+           android:background="@color/white"
+           />
+
+
+   </LinearLayout>
+
+
+</RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_View"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/navigation_menu"
+        android:visibility="visible"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

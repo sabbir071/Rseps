@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#00A36C</color>
+    <color name="freelancerColor">#29B2FE</color>
+    <color name="menu_item_text_color">#ff0000</color>
+    <color name="neon">#0062FF</color>
+    <color name="neon2">#00FFFF</color>
+
+
+
+
+</resources>

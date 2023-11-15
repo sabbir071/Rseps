@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">RSEPS</string>
+
+    <string name="open"></string>
+    <string name="close"></string>
+
+
+    <string-array name="division">
+        <item>Select Division</item>
+        <item>Rajshahi</item>
+        <item>Dhaka</item>
+        <item>Khulna</item>
+        <item>Barishal</item>
+        <item>Rangpur</item>
+        <item>Sylhet</item>
+
+    </string-array>
+
+    <string-array name="array_default_districts">
+        <item>Select District</item>
+        <item>Bogura</item>
+        <item>Pabna</item>
+        <item>Natore</item>
+        <item>Sirajganj</item>
+        <item>Naogaon</item>
+
+    </string-array>
+
+    <string-array name="array_default_upazila">
+        <item>Select Upazila</item>
+        <item>Shajahanpur</item>
+        <item>Bogura Sadar</item>
+        <item>Kahaloo</item>
+        <item>Dhunot</item>
+        <item>Sherpur</item>
+    </string-array>
+
+    <string-array name="Union">
+        <item>Select Upazila</item>
+        <item>Majhira</item>
+        <item>Chopinagar</item>
+        <item>Kharna</item>
+        <item>Asekpur</item>
+        <item>Madla</item>
+        <item>Aria</item>
+        <item>Khottapara</item>
+        <item>Amrul</item>
+        <item>Gohail</item>
+    </string-array>
+
+
+</resources>
